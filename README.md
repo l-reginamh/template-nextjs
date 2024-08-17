@@ -26,6 +26,8 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [tailwindcss](https://tailwindcss.com) - Rapidly build modern websites without ever leaving your HTML.
+- [Build components library using shadcn/ui](https://ui.shadcn.com/) - Beautifully designed components that you can copy and paste into your apps.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
