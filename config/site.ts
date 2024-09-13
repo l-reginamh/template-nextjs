@@ -5,7 +5,7 @@ export const siteConfig = {
     author: "Regina Liew",
     links: {
         twitter: "https://x.com",
-        github: "https://github.com/l-reginamh",
+        github: "https://github.com",
     }
 }
 

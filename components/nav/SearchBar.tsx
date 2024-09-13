@@ -17,9 +17,9 @@ export const SearchBar = ({
     variant={"ghost"}
       onClick={onClick}
       title="Search"
-      className="mx-4 w-min-[40px] cursor-text items-center justify-center rounded-md border border-foreground bg-gray-50 px-2 text-sm hover:border-primary hover:bg-gray-100 dark:border-gray-200 dark:bg-gray-900 dark:hover:border-blue-600 dark:hover:bg-gray-800 [@media(min-width:900px)]:w-[unset]"
+      className="sm:mx-4 w-min-[34px] cursor-text items-center justify-center rounded-md border border-foreground bg-gray-50 px-2 text-sm hover:border-primary hover:bg-gray-100 dark:border-gray-200 dark:bg-[#00252e] dark:hover:border-blue-600 dark:hover:bg-gray-800 [@media(min-width:900px)]:w-[unset]"
     >
-      <span className="mx-1 my-4 block w-4 [@media(min-width:900px)]:mr-2">
+      <span className="my-2 block  w-4 [@media(min-width:900px)]:mr-2">
         <Icons.search />
       </span>
       <span className="mr-8 hidden text-slate-600 dark:text-slate-300 [@media(min-width:980px)]:block">

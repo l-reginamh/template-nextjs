@@ -10,6 +10,7 @@ import { useMemo } from "react";
 import { SearchBar } from "./nav/SearchBar";
 import CommandPortal from "./nav/CommandPortal";
 import { Icons } from "./Icon";
+import { ThemeToggle } from "./nav/ThemeToggle";
 
 const ACTION_KEY_DEFAULT = "CTRL"
 const ACTION_KEY_APPLE = "⌘"
@@ -38,22 +39,6 @@ export function SiteHeader() {
               priority: Priority.HIGH,
             },
             {
-              id: "posts",
-              name: "Posts",
-              keywords: "blog posts content notes",
-              section: "Home",
-              perform: () => router.push("/posts"),
-              priority: Priority.HIGH,
-            },
-            {
-              id: "cheatsheets",
-              name: "Cheatsheets",
-              keywords: "sheets cheatsheets cheatsheet notes",
-              section: "Home",
-              perform: () => router.push("/cheatsheets"),
-              priority: Priority.HIGH,
-            },
-            {
               id: "twitter",
               name: "Twitter",
               keywords: "contact twitter tweet",
@@ -76,13 +61,9 @@ export function SiteHeader() {
 
 
     return (
-        <header className="z-10 sticky top-0 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filyer]:bg-background/60">
+        <header className="z-10 sticky top-0 w-full bg-background/95 backdrop-blur supports-[backdrop-filyer]:bg-background/60">
             <div className="container flex h-14 min-w-full max-w-screen-2xl items-center">
-                {pathname !== "/" ? 
-                    (<Button variant={"ghost"} onClick={router.back} className="hidden sm:inline-flex"><Icons.back className="h-4 w-4" /></Button>)
-                    :
-                    null
-                }
+                <Mobile />
                 <nav className="flex flex-1 items-center space-x-4 lg:space-x-6">
                     <Main />
                 </nav>
@@ -128,7 +109,7 @@ export function SiteHeader() {
                     />
                     <CommandPortal actions={getActions()} />
                 </KBarProvider>
-                <Mobile />
+                <ThemeToggle className="hidden sm:inline-flex" />
             </div>
         </header>
     );
